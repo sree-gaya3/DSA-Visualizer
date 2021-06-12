@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Algorithm Visualizer</title>
+
+  <!-- Google Fonts -->
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+  <script src="https://kit.fontawesome.com/080832509d.js" crossorigin="anonymous"></script>
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../assets/css/styles.css" rel="stylesheet">
+  <link href="../assets/css/comparision_sorts.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div>
+    <div id="header" class="d-flex flex-row justify-content-center align-items-center">
+      <p class="pt-3 px-3 mr-auto col-2 col-lg-4"><a href="../index.html"><i class="fas fa-home fa-2x"></i></a></p>
+      <h1 id="main-heading" class="px-2 py-1 col-lg-8">Comparision Sorting Algorithms</h1>
+    </div>
+    <div class="row align-self-center">
+      <div id="algoControlSection" class="col-12 mt-5 d-flex flex-column flex-lg-row">
+        <!-- Table for buttons to control specific animation (insert/find/etc) -->
+        <!-- (filled in by javascript code specific to the animtion) -->
+        <div class="sorts container-fluid align-self-center" style="margin: 0; padding: 0;">
+          <ul id="AlgorithmSpecificControls" class="container-fluid d-flex p-0 p-sm-2">
+            <li><button class="mx-1 px-sm-2 mx-sm-2" value="Insertion">Insertion</button></li>
+            <li><button class="mx-1 px-sm-2 mx-sm-2" value="Selection">Selection</button></li>
+            <li><button class="mx-1 px-sm-2 mx-sm-2" value="Bubble">Bubble</button></li>
+            <li><button class="mx-1 px-sm-2 mx-sm-2" value="Quick">Quick</button></li>
+            <li><button class="mx-1 px-sm-2 mx-sm-2" value="Merge">Merge</button></li>
+            <li><button class="mx-1 px-sm-2 mx-sm-2" value="Heap">Heap</button></li>
+          </ul>
+        </div>
+
+        <!-- class="d-none d-lg-block" -->
+        <div class="col-12 col-lg-6">
+          <div class="array-inputs d-flex flex-sm-row flex-column justify-content-center py-3">
+            <div class="d-flex flex-row flex-sm-column justify-content-center px-sm-4">
+              <h5 class="text-responsive pr-3">Array Size</h5>
+              <input id="a_size" type="range" min=20 max=150 step=1 value=80>
+            </div>
+            <div class="d-flex flex-row flex-sm-column justify-content-center px-sm-3">
+              <h5 class="text-responsive pr-3">Speed</h5>
+              <input id="a_speed" type="range" min=1 max=5 step=1 value=3>
+            </div>
+            <div class="d-flex flex-row justify-content-center">
+              <button id="a_generate" class="col-6 p-1">Generate New Array</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+
+
+    <div class="d-flex justify-content-center">
+      <div id="array_container" class="align-items-end" style="flex-direction: row; height: 50vh;">
+
+      </div>
+    </div>
+
+    <!--
+    <footer>
+      <div class="d-block d-lg-none">
+        <div class="array-inputs d-flex flex-row justify-content-center py-3">
+          <div class="px-lg-3">
+            <h6 class="text-responsive1">Array Size</h6>
+            <input id="a_size" type="range" min=20 max=150 step=1 value="40">
+            <output></output>
+          </div>
+          <div class="px-lg-3">
+            <h6 class="text-responsive1">Speed</h6>
+            <input id="a_speed" type="range" min=1 max=5 step=1 value=4>
+          </div>
+          <button id="a_generate">Generate New Array!</button>
+        </div>
+      </div>
+    </footer>
+  -->
+
+
+
+
+
+
+  </div>
+
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/comparision_sorts/visualization.js"></script>
+  <script src="../assets/js/comparision_sorts/insertion_sort.js"></script>
+  <script src="../assets/js/comparision_sorts/selection_sort.js"></script>
+  <script src="../assets/js/comparision_sorts/bubble_sort.js"></script>
+  <script src="../assets/js/comparision_sorts/quick_sort.js"></script>
+  <script src="../assets/js/comparision_sorts/merge_sort.js"></script>
+  <script src="../assets/js/comparision_sorts/heap_sort.js"></script>
+
+  <script src="../assets/vendor/jquery/jquery.min.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

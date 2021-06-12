@@ -1,0 +1,34 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.text-responsive {
+  font-size: cal(10% + 1vw + 1vh);
+}
+
+#header {
+  background-color: coral;
+}
+
+#main-heading {
+  font-size: 34px;
+}
+
+.AlgorithmSpecificControls {
+  margin: 0;
+  padding: 0;
+}
+
+/* Main Contant */
+
+#array_container {
+  display: flex;
+  width: 80%;
+  height: 40vh;
+}
